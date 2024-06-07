@@ -14,11 +14,17 @@ knitr::opts_chunk$set(echo = TRUE)
 install.packages("tidyverse")
 ```
 
-## Including Plots
+## Loading the data sets
 
 
 ```{r}
-GPL_person <- read.csv("GLP_person level")
+GPL_person <- read.csv2("GLP_person level.csv")
+GPL_country <- read.csv2("GLP_country level.csv")
+
 ```
 
-Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+```{r}
+table(GPL_person$person_party_aff_power, useNA = "ifany")
+table(GPL_person$person_firstname_local)
+```
+
