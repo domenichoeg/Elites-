@@ -1,0 +1,24 @@
+---
+title: "GPL"
+author: "Domenic Hög"
+date: "2024-06-06"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Packages loading
+```{r}
+install.packages("tidyverse")
+```
+
+## Including Plots
+
+
+```{r}
+GPL_person <- read.csv("GLP_person level")
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
