@@ -28,3 +28,8 @@ table(GPL_person$person_party_aff_power, useNA = "ifany")
 table(GPL_person$person_firstname_local)
 ```
 
+```{r}
+Who_gov_cross <- read.csv("WhoGov_crosssectional_V2.0.csv")
+Who_gov_within <- read.csv("WhoGov_within_V2.0.csv")
+```
+
